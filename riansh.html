@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</head>
+<body>
+
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="primary">
+                <div id="v" style="font-size: x-large;text-align: center;"></div>
+                <ion-icon name="mic-outline" style="font-size: xx-large;" slot="end" onclick="listen()"></ion-icon>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content style="--ion-background-color:#000;">
+           <div class="row">
+               <ion-button onclick="onbuttonpress(7)" value="7">7</ion-button>
+               <ion-button onclick="onbuttonpress(8)" value="8">8</ion-button>
+               <ion-button onclick="onbuttonpress(9)" value="9">9</ion-button>
+               <ion-button onclick="onbuttonpress('/')" value="7">÷</ion-button>
+               <br>
+               <ion-button onclick="onbuttonpress(4)" value="4">4</ion-button>
+               <ion-button onclick="onbuttonpress(5)" value="5">5</ion-button>
+               <ion-button onclick="onbuttonpress(6)" value="6">6</ion-button>
+               <ion-button onclick="onbuttonpress('*')" value="*">X</ion-button>
+               <br>
+               <ion-button onclick="onbuttonpress(1)" value="1">1</ion-button>
+               <ion-button onclick="onbuttonpress(2)" value="2">2</ion-button>
+               <ion-button onclick="onbuttonpress(3)" value="3">3</ion-button>
+               <ion-button onclick="onbuttonpress('-')" value="-">-</ion-button>
+               <br>
+               <ion-button color="danger" onclick="location.reload()">C</ion-button>
+               <ion-button onclick="onbuttonpress(0)" value="0">0</ion-button>
+               <ion-button onclick="onbuttonpress('+')" value="+">+</ion-button>
+               <ion-button color="success" onclick="add()" value="=">=</ion-button>
+           </div>
+        </ion-content>
+    </ion-app>
+     
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+    <script src="riansh.js"></script>
+</body>
+</html>
